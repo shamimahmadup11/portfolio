@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -470,4 +470,133 @@ body{
     margin-top: 50px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(49, 48, 48),-5px -5px 5px rgb(49, 48, 48);
+}
+
+/* Media query for tablets and smaller screens */
+@media screen and (max-width: 1024px) {
+    .navbar > .nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .navbar > .nav > .right {
+        width: 100%; /* Occupy full width */
+        padding: 20px 0; /* Add padding top and bottom */
+    }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .navbar > .nav > .logo,
+    .navbar > .nav > .right {
+        width: 100%; /* Occupy full width */
+    }
+
+    .navbar > .nav > .right {
+        display: flex;
+         /* Stack items vertically */
+        justify-content: space-around; /* Center align items */
+    
+    }
+}
+/* Media query for tablets and smaller screens */
+@media screen and (max-width: 1024px) {
+    .main > .aboutMe > .header {
+        width: 80%; /* Adjust header width */
+    }
+
+    .main > .aboutMe > .para,
+    .main > .para {
+        width: 80%; /* Adjust paragraph width */
+    }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .main > .aboutMe {
+        width: 90%; /* Adjust container width */
+    }
+
+    .main > .aboutMe > .header > h1 {
+        font-size: 28px; /* Adjust header font size */
+    }
+
+    .main > .aboutMe > .para > p,
+    .main > .para > p {
+        font-size: 18px; /* Adjust paragraph font size */
+    }
+
+    .button > a > button {
+        width: 150px; /* Adjust button width */
+        font-size: 16px; /* Adjust button font size */
+    }
+}
+/* Media query for tablets and smaller screens */
+@media screen and (max-width: 1024px) {
+    .section3 > .main2 > .para2 {
+        width: 80%; /* Adjust width */
+    }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .section3 > .main3 > .knowme > .button > button,
+    .section3 > .main3 > .miskills > .skills > .div {
+        width: 150px; /* Adjust button width */
+        font-size: 16px; /* Adjust button font size */
+    }
+}
+/* Media query for tablets and smaller screens */
+@media screen and (max-width: 1024px) {
+    .projects > .main4 {
+        display: flex;
+        flex-direction: column;
+        width: 95%; /* Adjusted width for responsiveness */
+    }
+
+    .projects > .project1 > .image {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px; /* Adjusted max-width for smaller screens */
+    }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .projects > .main4 {
+        width: 100%; /* Adjusted width for responsiveness */
+    }
+
+    .projects > .project1 > .image {
+        max-width: 90%; /* Adjusted max-width for smaller screens */
+    }
+
+    .projects > .project1 > .right1 {
+        padding: 10px; /* Reduced padding for responsiveness */
+    }
+}
+/* Media query for tablets and smaller screens */
+@media screen and (max-width: 1024px) {
+    .contactForm {
+        width: 95%; /* Adjusted width for responsiveness */
+    }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .contactForm {
+        width: 100%; /* Adjusted width for responsiveness */
+    }
+}
+@media screen and (max-width: 1024px) {
+    .footer > .left, .footer > .right {
+        width: 90%; /* Adjusted width for responsiveness */
+    }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .footer > .left, .footer > .right {
+        width: 100%; /* Adjusted width for responsiveness */
+    }
 }
